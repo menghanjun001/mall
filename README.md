@@ -20,3 +20,24 @@ OSS	｜2.5.0	｜对象存储
 JWT	｜0.9.0	｜JWT登录支持
 Lombok｜	1.18.6	｜简化对象封装工具
 
+##主要学习的内容
+- Spring Cloud 整体架构概览
+- Spring Cloud Eureka：服务注册与发现
+- Spring Cloud Ribbon：负载均衡的服务调用
+- Spring Cloud Hystrix：服务容错保护
+- Hystrix Dashboard：断路器执行监控
+- Spring Cloud OpenFeign：基于Ribbon和Hystrix的声明式服务调用
+- Spring Cloud Zuul：API网关服务
+- Spring Cloud Config：外部集中化配置管理
+- Spring Cloud Bus：消息总线
+- Spring Cloud Sleuth：分布式请求链路跟踪
+- Spring Cloud Consul：服务治理与配置中心
+- Spring Cloud Gateway：新一代API网关服务
+- Spring Boot Admin：微服务应用监控
+- Spring Cloud Security：Oauth2使用入门
+- Spring Cloud Security：Oauth2结合JWT使用
+- Spring Cloud Security：Oauth2实现单点登录
+- Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用
+- Spring Cloud Alibaba：Sentinel实现熔断与限流
+- 使用Seata彻底解决Spring Cloud中的分布式事务问题
+- 微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！
