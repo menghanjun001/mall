@@ -3,7 +3,7 @@ package org.meng.mall.model;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
-public class CmsPreferenceAreaProductRelation implements Serializable {
+public class CmsPrefrenceAreaProductRelation implements Serializable {
     private Long id;
 
     private Long prefrenceAreaId;

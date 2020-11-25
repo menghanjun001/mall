@@ -10,12 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * mybatisGenerator
- * @Created by menghanjun
- * @Date 2020/11/24 4:47 下午
+ * 用于生产MBG的代码
+ * Created by macro on 2018/4/26.
  */
 public class Generator {
-    //TODO 还拿不到数据库的表呢
     public static void main(String[] args) throws Exception {
         //MBG 执行过程中的警告信息
         List<String> warnings = new ArrayList<String>();

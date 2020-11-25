@@ -3,14 +3,14 @@ package org.meng.mall.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CmsPreferenceAreaProductRelationExample {
+public class CmsPrefrenceAreaProductRelationExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public CmsPreferenceAreaProductRelationExample() {
+    public CmsPrefrenceAreaProductRelationExample() {
         oredCriteria = new ArrayList<>();
     }
 

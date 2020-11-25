@@ -1,30 +1,30 @@
 package org.meng.mall.mapper;
 
-import org.meng.mall.model.CmsPreferenceAreaProductRelation;
-import org.meng.mall.model.CmsPreferenceAreaProductRelationExample;
+import org.meng.mall.model.CmsPrefrenceAreaProductRelation;
+import org.meng.mall.model.CmsPrefrenceAreaProductRelationExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-public interface CmsPreferenceAreaProductRelationMapper {
-    long countByExample(CmsPreferenceAreaProductRelationExample example);
+public interface CmsPrefrenceAreaProductRelationMapper {
+    long countByExample(CmsPrefrenceAreaProductRelationExample example);
 
-    int deleteByExample(CmsPreferenceAreaProductRelationExample example);
+    int deleteByExample(CmsPrefrenceAreaProductRelationExample example);
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(CmsPreferenceAreaProductRelation record);
+    int insert(CmsPrefrenceAreaProductRelation record);
 
-    int insertSelective(CmsPreferenceAreaProductRelation record);
+    int insertSelective(CmsPrefrenceAreaProductRelation record);
 
-    List<CmsPreferenceAreaProductRelation> selectByExample(CmsPreferenceAreaProductRelationExample example);
+    List<CmsPrefrenceAreaProductRelation> selectByExample(CmsPrefrenceAreaProductRelationExample example);
 
-    CmsPreferenceAreaProductRelation selectByPrimaryKey(Long id);
+    CmsPrefrenceAreaProductRelation selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") CmsPreferenceAreaProductRelation record, @Param("example") CmsPreferenceAreaProductRelationExample example);
+    int updateByExampleSelective(@Param("record") CmsPrefrenceAreaProductRelation record, @Param("example") CmsPrefrenceAreaProductRelationExample example);
 
-    int updateByExample(@Param("record") CmsPreferenceAreaProductRelation record, @Param("example") CmsPreferenceAreaProductRelationExample example);
+    int updateByExample(@Param("record") CmsPrefrenceAreaProductRelation record, @Param("example") CmsPrefrenceAreaProductRelationExample example);
 
-    int updateByPrimaryKeySelective(CmsPreferenceAreaProductRelation record);
+    int updateByPrimaryKeySelective(CmsPrefrenceAreaProductRelation record);
 
-    int updateByPrimaryKey(CmsPreferenceAreaProductRelation record);
+    int updateByPrimaryKey(CmsPrefrenceAreaProductRelation record);
 }
