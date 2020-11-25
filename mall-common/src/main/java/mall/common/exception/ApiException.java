@@ -3,6 +3,8 @@ package mall.common.exception;
 import lombok.Data;
 import mall.common.api.IErrorCode;
 
+import java.util.concurrent.Executors;
+
 /**
  * 自定义异常
  * @Created by menghanjun
@@ -13,6 +15,7 @@ public class ApiException extends RuntimeException {
     private IErrorCode errorCode;
 
     public ApiException(IErrorCode iErrorCode) {
+//        Executors.newFixedThreadPool()
         super(iErrorCode.getMessage());
         this.errorCode = iErrorCode;
     }
