@@ -13,9 +13,9 @@ public interface OssService {
     /**
      * oss上传策略生成
      */
-    OssPolicyResult policy();
+//    OssPolicyResult policy();
     /**
      * oss上传成功回调
      */
-    OssCallbackResult callback(HttpServletRequest request);
+//    OssCallbackResult callback(HttpServletRequest request);
 }

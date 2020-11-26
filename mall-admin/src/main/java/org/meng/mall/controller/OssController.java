@@ -21,23 +21,23 @@ import javax.servlet.http.HttpServletRequest;
 @Api(tags = "OssController", description = "Oss管理")
 @RequestMapping("/aliyun/oss")
 public class OssController {
-    @Autowired
-    private OssServiceImpl ossService;
-
-    @ApiOperation(value = "oss上传签名生成")
-    @RequestMapping(value = "/policy", method = RequestMethod.GET)
-    @ResponseBody
-    public CommonResult<OssPolicyResult> policy() {
-        OssPolicyResult result = ossService.policy();
-        return CommonResult.success(result);
-    }
-
-    @ApiOperation(value = "oss上传成功回调")
-    @RequestMapping(value = "callback", method = RequestMethod.POST)
-    @ResponseBody
-    public CommonResult<OssCallbackResult> callback(HttpServletRequest request) {
-        OssCallbackResult ossCallbackResult = ossService.callback(request);
-        return CommonResult.success(ossCallbackResult);
-    }
+//    @Autowired
+//    private OssServiceImpl ossService;
+//
+//    @ApiOperation(value = "oss上传签名生成")
+//    @RequestMapping(value = "/policy", method = RequestMethod.GET)
+//    @ResponseBody
+//    public CommonResult<OssPolicyResult> policy() {
+//        OssPolicyResult result = ossService.policy();
+//        return CommonResult.success(result);
+//    }
+//
+//    @ApiOperation(value = "oss上传成功回调")
+//    @RequestMapping(value = "callback", method = RequestMethod.POST)
+//    @ResponseBody
+//    public CommonResult<OssCallbackResult> callback(HttpServletRequest request) {
+//        OssCallbackResult ossCallbackResult = ossService.callback(request);
+//        return CommonResult.success(ossCallbackResult);
+//    }
 
 }

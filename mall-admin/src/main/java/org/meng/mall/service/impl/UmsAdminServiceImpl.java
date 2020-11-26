@@ -50,8 +50,8 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     private UmsAdminRoleRelationDao adminRoleRelationDao;
     @Autowired
     private UmsAdminLoginLogMapper loginLogMapper;
-    @Autowired
-    private AuthService authService;
+//    @Autowired
+//    private AuthService authService;
     @Autowired
     private UmsAdminCacheService adminCacheService;
     @Autowired
@@ -88,24 +88,24 @@ public class UmsAdminServiceImpl implements UmsAdminService {
         return umsAdmin;
     }
 
-    @Override
-    public CommonResult login(String username, String password) {
-        if(StrUtil.isEmpty(username)||StrUtil.isEmpty(password)){
-            Asserts.fail("用户名或密码不能为空！");
-        }
-        Map<String, String> params = new HashMap<>();
-        params.put("client_id", AuthConstant.ADMIN_CLIENT_ID);
-        params.put("client_secret","123456");
-        params.put("grant_type","password");
-        params.put("username",username);
-        params.put("password",password);
-        CommonResult restResult = authService.getAccessToken(params);
-        if(ResultCode.SUCCESS.getCode()==restResult.getCode()&&restResult.getData()!=null){
-//            updateLoginTimeByUsername(username);
-            insertLoginLog(username);
-        }
-        return restResult;
-    }
+//    @Override
+//    public CommonResult login(String username, String password) {
+//        if(StrUtil.isEmpty(username)||StrUtil.isEmpty(password)){
+//            Asserts.fail("用户名或密码不能为空！");
+//        }
+//        Map<String, String> params = new HashMap<>();
+//        params.put("client_id", AuthConstant.ADMIN_CLIENT_ID);
+//        params.put("client_secret","123456");
+//        params.put("grant_type","password");
+//        params.put("username",username);
+//        params.put("password",password);
+//        CommonResult restResult = authService.getAccessToken(params);
+//        if(ResultCode.SUCCESS.getCode()==restResult.getCode()&&restResult.getData()!=null){
+////            updateLoginTimeByUsername(username);
+//            insertLoginLog(username);
+//        }
+//        return restResult;
+//    }
 
     /**
      * 添加登录记录

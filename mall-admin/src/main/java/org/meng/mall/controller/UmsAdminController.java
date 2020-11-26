@@ -48,12 +48,12 @@ public class UmsAdminController {
         return CommonResult.success(umsAdmin);
     }
 
-    @ApiOperation(value = "登录以后返回token")
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
-    @ResponseBody
-    public CommonResult login(@Validated @RequestBody UmsAdminLoginParam umsAdminLoginParam) {
-        return adminService.login(umsAdminLoginParam.getUsername(),umsAdminLoginParam.getPassword());
-    }
+//    @ApiOperation(value = "登录以后返回token")
+//    @RequestMapping(value = "/login", method = RequestMethod.POST)
+//    @ResponseBody
+//    public CommonResult login(@Validated @RequestBody UmsAdminLoginParam umsAdminLoginParam) {
+//        return adminService.login(umsAdminLoginParam.getUsername(),umsAdminLoginParam.getPassword());
+//    }
 
     @ApiOperation(value = "获取当前登录用户信息")
     @RequestMapping(value = "/info", method = RequestMethod.GET)

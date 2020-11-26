@@ -31,8 +31,8 @@ public class UmsResourceServiceImpl implements UmsResourceService {
     private UmsRoleResourceRelationMapper roleResourceRelationMapper;
     @Autowired
     private RedisService redisService;
-    @Value("${spring.application.name}")
-    private String applicationName;
+//    @Value("${spring.application.name}")
+//    private String applicationName;
     @Override
     public int create(UmsResource umsResource) {
         umsResource.setCreateTime(new Date());

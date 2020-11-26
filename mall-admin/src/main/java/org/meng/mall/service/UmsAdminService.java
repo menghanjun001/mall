@@ -32,7 +32,7 @@ public interface UmsAdminService {
      * @param password 密码
      * @return 调用认证中心返回结果
      */
-    CommonResult login(String username, String password);
+//    CommonResult login(String username, String password);
 
     /**
      * 根据用户id获取用户
